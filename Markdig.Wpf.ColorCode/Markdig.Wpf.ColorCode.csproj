@@ -4,7 +4,21 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/coltrane2ny/Markdig.Wpf.ColorCode</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/coltrane2ny/Markdig.Wpf.ColorCode.git</RepositoryUrl>
+    <PackageTags>markdig;markdig.wpf;wpf;markdown;colorcode;colorize;highlight;renderer;RichTextBox</PackageTags>
+    <PackageId>Coltr.$(AssemblyName)</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Coltr.ColorCode.Wpf" Version="1.0.0" />
